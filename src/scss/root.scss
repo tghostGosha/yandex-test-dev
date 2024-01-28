@@ -1,0 +1,26 @@
+:root {
+  --primary-red: #F54932;
+  --greyD6: #D6D6D6;
+  --greyD0: #D0D0D0;
+  --greyD4: #E9DED4;
+  --blue: #3057A2;
+  --white: #ffffff;
+  --primary-text: #313131;
+  --secondary-text: #151515;
+  --primary-yellow: #FBCE51;
+  --black: #1F1F1F;
+
+  --mb-40: 40px;
+  --mb-24: 24px;
+  
+  --animation-transition: all 0.2s ease-in-out 0s;
+
+  @media(max-width: 1176px) {
+    --mb-40: 32px;
+  }
+
+  @media(max-width: 585px) {
+    --mb-40: 24px;
+    --mb-24: 16px;
+  }
+}

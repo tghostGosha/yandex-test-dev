@@ -1,0 +1,16 @@
+.footer {
+  background-color: var(--greyD4);
+  &__container {
+    padding: 41px 0 72px 0;
+    @media(max-width: 880px) {
+      padding: 41px 0 60px 0;
+    }
+    & p {
+      line-height: 19px;
+      @media(max-width: 880px) {
+        letter-spacing: 1.1px;
+      }
+    }
+  }
+
+}

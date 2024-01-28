@@ -1,0 +1,156 @@
+.header {
+  background-image: url("../img/background/background.png");
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    @media(max-width: 880px) {
+      align-items: center;
+    }
+
+    &-title {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 24px;
+      @media (min-width: 1600px) {
+
+        margin-bottom: 23px;
+      }
+
+      & span {
+        font-family: Merriweather, sans-serif;
+        font-size: clamp(2.25rem, 1.6824rem + 2.4218vw, 3.75rem);
+        color: var(----primary-text);
+        line-height: 66px;
+        font-weight: 400;
+        @media(max-width: 880px) {
+          line-height: 40px;
+        }
+
+      }
+      & span:nth-child(3n),
+      & span:nth-child(4n){
+        text-align: center;
+      }
+      & span:nth-child(4n){
+        padding-left: 34px;
+        @media(max-width: 880px) {
+          padding-left: 31px;
+        }
+      }
+    }
+    &-descr {
+      max-width: 50%;
+      padding-left: 29px;
+      margin-bottom: 40px;
+      @media (min-width: 1600px) {
+
+        padding-left: 12px;
+      }
+      @media(max-width: 880px){
+        max-width: 100%;
+        padding-left: 0;
+        margin-bottom: 31px;
+      }
+      & p {
+        font-size: 18px;
+
+        line-height: 23px;
+        font-weight: 500;
+        text-align: center;
+        color: var(--primary-text);
+        @media (min-width: 1600px) {
+          letter-spacing: 0.8px;
+        }
+        @media(max-width: 880px) {
+          text-align: left;
+        }
+      }
+    }
+    & .button__group {
+      display: flex;
+      max-width: 51%;
+      column-gap: 16px;
+      font-weight: 500;
+      line-height: 21px;
+      max-height: 72px;
+      @media (min-width: 1600px) {
+        max-height: 70px;
+      }
+      @media(max-width: 880px){
+        max-width: 100%;
+        width: 100%;
+        flex-direction: column;
+        row-gap: 14px;
+      }
+      & a {
+        flex: 0 0 42%;
+        @media(max-width: 880px){
+          flex: 0 0 100%;
+        }
+      }
+    }
+
+  }
+  & .svg-logo-dims {
+    margin-bottom: 57px;
+    width: 245px;
+    height: 36px;
+    @media(max-width: 880px) {
+      width: 213px;
+      height: 27px;
+      margin-bottom: 40px;
+    }
+  }
+  &__container {
+    padding-top: 26px;
+    padding-bottom: 132px;
+    background: url("../img/background/hourse.png") bottom 3px left 61.2vw/14.4% no-repeat,
+    url("../img/background/pawn.png") bottom 21px right 3.3vw/6.1% no-repeat,
+
+    url("../img/background/path2.png") bottom left -9.2vw /118% no-repeat,
+    url("../img/background/background-city.png") bottom left -8.615vw/119% no-repeat,
+
+    url("../img/background/king.png") bottom 20vw left 77.74vw/10.7% no-repeat,
+    url("../img/background/queen.png") bottom 12.5vw left 53.4vw/9.4% no-repeat,
+
+
+    url("../img/background/ellips-words.png") bottom 2.3vw left 45vw/56.7% no-repeat,
+    url("../img/background/ellipse.png") bottom 6.3vw left 49.3vw/48.3% no-repeat;
+
+    @media (min-width: 1600px) {
+      background: url("../img/background/hourse.png") bottom 2px left 58vw/10.2vw no-repeat,
+      url("../img/background/pawn.png") bottom 21px right 16.3vw/4.3vw no-repeat,
+
+      url("../img/background/path2.png") bottom left 8vw /84% no-repeat,
+      url("../img/background/background-city.png") bottom  left 8.385vw / 85% no-repeat,
+
+      url("../img/background/king.png") bottom 14vw left 69.74vw/7.7% no-repeat,
+      url("../img/background/queen.png") bottom 8.8vw left 52.552vw/6.7% no-repeat,
+
+
+      url("../img/background/ellips-words.png") bottom 1.2vw  left 46.406vw /40.7% no-repeat,
+      url("../img/background/ellipse.png") bottom 4.5vw   left 49.531vw /34.5% no-repeat;
+    }
+    @media(max-width: 880px) {
+      padding-top: 20px;
+      padding-bottom: 327px;
+      background: url("../img/background/hourse.png") bottom 4px left 39vw/26.2vw no-repeat,
+      url("../img/background/pawn.png") bottom 21px right -15.7vw/12.3vw no-repeat,
+
+      url("../img/background/path2.png") bottom left -106.8vw /233% no-repeat,
+      url("../img/background/background-city.png") bottom  left -107.8vw / 237.8% no-repeat,
+
+      url("../img/background/king.png") bottom 43vw left 61.74vw/16.7% no-repeat ,
+      url("../img/background/queen.png")  bottom 30vw left 16.7vw/15.7% no-repeat,
+
+
+      url("../img/background/ellips-words.png") bottom 11.2vw left 0.406vw/92.7% no-repeat,
+      url("../img/background/ellipse.png") bottom 17.5vw left 7.8vw/79.5% no-repeat;
+    }
+
+  }
+
+  }
+
